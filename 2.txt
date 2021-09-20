@@ -14,7 +14,7 @@ FOR i<-1 TO n DO
     IF i MOD 5 = 0 THEN
       DISPLAY "Buzz"
     ELSE
-      IF i MOD 3 = 0 AND n MOD 5 = 0 THEN
+      IF i MOD 3 = 0 AND i MOD 5 = 0 THEN
         DISPLAY "FizzBuzz"
       ELSE
         DISPLAY i

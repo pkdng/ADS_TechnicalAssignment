@@ -1,0 +1,39 @@
+DEKLARASI:
+a,i,j,k,x : number
+words, words2, temp : array[1...N] of String
+
+DESKRIPSI:
+
+START
+
+SET a <- 0
+SET i <- 0
+SET j <- 0
+
+INPUT words
+
+x <- lengthofstring(words) - 1
+
+FOR i to x DO
+  IF words[i] <- ' ' THEN
+    words[i] <- RETURN 0
+  ELSE
+    words2[j] <- words[i]
+    j <- j + 1
+  ENDIF
+ENDFOR
+
+k <- j - 1
+
+FOR k DOWNTO 0
+  temp[a] <- words2[k]
+  a <- a + 1
+ENDFOR
+
+IF words2 = temp THEN 
+  DISPLAY "TRUE"
+ELSE
+  DISPLAY "FALSE"
+ENDIF
+
+END

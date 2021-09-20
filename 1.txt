@@ -1,0 +1,26 @@
+DEKLARASI:
+N, celcius : number
+besaran    : String
+
+DESKRIPSI:
+
+START
+
+INPUT N
+INPUT besaran
+
+IF besaran = "fahrenheit" THEN 
+  celcius <- (N - 32) * (5/9)
+ELSE 
+  IF besaran = "kelvin" THEN
+    celcius <- (N - 273.15)
+  ELSE 
+    IF besaran = "celcius" THEN
+      celcius <- N
+    ENDIF
+  ENDIF
+ENDIF
+
+DISPLAY celcius
+
+END
